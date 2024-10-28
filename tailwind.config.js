@@ -8,7 +8,8 @@ export default {
         inter: ["Inter", "sans-serif"],
       },
       colors: {
-        hoverBtn: "#A0BCE0",
+        secondary: "#009444",
+        primary: "#FFFFFF",
       },
     },
   },

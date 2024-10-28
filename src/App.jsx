@@ -1,5 +1,13 @@
+import Navbar from "./components/Navbar";
+import TopHeader from "./components/TopHeader";
+
 const App = () => {
-  return <div className=" text-center font-kanit text-4xl">Wuraola Farms</div>;
+  return (
+    <div>
+      <TopHeader />
+      <Navbar />
+    </div>
+  );
 };
 
 export default App;
