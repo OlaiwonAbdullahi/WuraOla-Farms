@@ -2,7 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        exo: ["Exo 2", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+      },
+      colors: {
+        hoverBtn: "#A0BCE0",
+      },
+    },
   },
   plugins: [],
 };
