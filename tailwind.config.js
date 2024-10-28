@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        exo: ["Exo 2", "sans-serif"],
+        kanit: ["Kanit", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
       colors: {
