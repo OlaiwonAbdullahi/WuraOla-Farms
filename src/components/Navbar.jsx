@@ -2,6 +2,7 @@ import { CiMenuFries, CiShoppingCart } from "react-icons/ci";
 import { LiaTimesSolid } from "react-icons/lia";
 import logo from "../assets/wuraolalogo.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   function closeMenu() {
@@ -15,10 +16,18 @@ const Navbar = () => {
         </div>
         <div className=" md:flex hidden ">
           <ul className=" flex gap-4">
-            <li className=" text-secondary">Home</li>
-            <li>About</li>
-            <li>Shop</li>
-            <li>Contact</li>
+            <Link to="/">
+              <li className=" text-secondary">Home</li>
+            </Link>
+            <Link to="/about">
+              <li>About</li>
+            </Link>
+            <Link to="/shop">
+              <li>Shop</li>
+            </Link>
+            <Link to="/contact">
+              <li>Contact</li>
+            </Link>
           </ul>
         </div>
 

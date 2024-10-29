@@ -9,7 +9,6 @@ const home = () => {
       <Hero />
       <About />
       <Whatwedo />
-      <Getintouch />
     </div>
   );
 };

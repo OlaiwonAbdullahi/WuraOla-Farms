@@ -5,6 +5,7 @@ import TopHeader from "./components/TopHeader";
 import Home from "./pages/home";
 import AboutPage from "./pages/AboutPage";
 import Contact from "./pages/Contact";
+import Getintouch from "./components/Getintouch";
 
 const App = () => {
   return (
@@ -17,9 +18,9 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Getintouch />
+        <Footer />
       </Router>
-
-      <Footer />
     </div>
   );
 };
