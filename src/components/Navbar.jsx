@@ -1,7 +1,12 @@
 import { CiMenuFries, CiShoppingCart } from "react-icons/ci";
 import { LiaTimesSolid } from "react-icons/lia";
 import logo from "../assets/wuraolalogo.png";
+import { useState } from "react";
 const Navbar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+  function closeMenu() {
+    setOpenMenu(!openMenu);
+  }
   return (
     <>
       <div className=" flex items-center justify-between p-3 font-kanit border-b">
@@ -24,22 +29,31 @@ const Navbar = () => {
               2
             </span>
           </div>
-          <div className=" md:hidden flex">
-            <CiMenuFries className=" h-6 w-6" />
-          </div>
-        </div>
-      </div>
-      <div className="fixed inset-0 z-50 flex  justify-center flex-col  bg-black text-gray-100">
-        <div className="">
           <button
-            className="absolute top-4 self-end right-0 text-xl"
-            // onClick={closeMenu}
+            className=" md:hidden flex"
+            onClick={() => setOpenMenu(!openMenu)}
           >
-            <LiaTimesSolid className="h-6 w-6" />
+            {!openMenu ? (
+              <CiMenuFries className="h-6 w-6 text-black" />
+            ) : (
+              <LiaTimesSolid className="h-6 w-6 text-black" />
+            )}
           </button>
         </div>
-        <Nav />
       </div>
+      {openMenu && (
+        <div className="fixed inset-0 z-50 flex  justify-center flex-col  bg-secondary text-black">
+          <div className="">
+            <button
+              className="absolute top-4 self-end right-4 text-xl"
+              onClick={closeMenu}
+            >
+              <LiaTimesSolid className="h-6 w-6 text-primary" />
+            </button>
+          </div>
+          <Nav />
+        </div>
+      )}
     </>
   );
 };
@@ -48,10 +62,10 @@ export default Navbar;
 
 function Nav() {
   return (
-    <div className=" flex md:hidden font-kanit justify-center text-center text-2xl relative">
+    <div className=" flex md:hidden font-kanit justify-center text-center text-2xl relative ">
       <div className="">
         <ul className=" flex flex-col gap-3">
-          <li className=" text-secondary">Home</li>
+          <li className=" text-primary">Home</li>
           <li>About</li>
           <li>Shop</li>
           <li>Contact</li>
