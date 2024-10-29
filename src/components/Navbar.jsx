@@ -22,7 +22,7 @@ const Navbar = () => {
             2
           </span>
         </div>
-        <div className="">
+        <div className=" md:hidden flex">
           <CiMenuFries className=" h-6 w-6" />
         </div>
       </div>
