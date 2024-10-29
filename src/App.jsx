@@ -1,3 +1,4 @@
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import TopHeader from "./components/TopHeader";
 
@@ -6,6 +7,7 @@ const App = () => {
     <div>
       <TopHeader />
       <Navbar />
+      <Hero />
     </div>
   );
 };
