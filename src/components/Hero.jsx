@@ -3,7 +3,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const Hero = () => {
   return (
-    <div className="bg-[url(/src/assets/Hero.jpg)] bg-cover bg-primary h-full">
+    <div className="bg-[url(/src/assets/Hero.jpg)] bg-cover bg-center bg-primary bg-no-repeat md:h-[50vh] h-[40vh]">
       <div className="flex flex-col gap-4 p-6">
         <h2 className="md:text-5xl leading-relaxed whitespace-nowrap md:leading-snug text-4xl text-center md:text-left text-primary font-kanit">
           Nourishing the Land,
