@@ -1,6 +1,6 @@
 import { CiMenuFries, CiShoppingCart } from "react-icons/ci";
 import { LiaTimesSolid } from "react-icons/lia";
-import logo from "../assets/wuraolalogo.png";
+import logo from "../assets/wuraolalogo1.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className=" flex items-center justify-between px-3 sticky top-0 bg-white font-kanit border-b">
+      <div className=" flex items-center justify-between px-3 sticky top-0 bg-white font-kanit border-b bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80">
         <div className="">
           <img src={logo} alt="" className=" md:w-20 md:h-20 h-16 w-16 " />
         </div>
