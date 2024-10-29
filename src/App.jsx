@@ -11,6 +11,7 @@ const App = () => {
     <div>
       <TopHeader />
       <Navbar />
+
       <Hero />
       <About />
       <Whatwedo />
