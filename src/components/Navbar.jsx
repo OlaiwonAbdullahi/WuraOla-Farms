@@ -2,9 +2,9 @@ import { CiMenuFries, CiShoppingCart } from "react-icons/ci";
 import logo from "../assets/wuraolalogo.png";
 const Navbar = () => {
   return (
-    <div className=" flex items-center justify-between p-3 font-kanit">
+    <div className=" flex items-center justify-between p-3 font-kanit border-b">
       <div className="">
-        <img src={logo} alt="" className=" w-24 h-24" />
+        <img src={logo} alt="" className=" md:w-20 md:h-20 h-16 w-16 " />
       </div>
       <div className=" md:flex hidden ">
         <ul className=" flex gap-4">
@@ -23,7 +23,7 @@ const Navbar = () => {
           </span>
         </div>
         <div className="">
-          <CiMenuFries className=" h-7 w-7" />
+          <CiMenuFries className=" h-6 w-6" />
         </div>
       </div>
     </div>
