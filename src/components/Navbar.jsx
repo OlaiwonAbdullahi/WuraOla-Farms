@@ -7,9 +7,10 @@ const Navbar = () => {
         <img src={logo} alt="" className=" w-24 h-24" />
       </div>
       <div className="">
-        <ul className=" flex gap-3">
+        <ul className=" flex gap-4">
           <li className=" text-secondary">Home</li>
           <li>About</li>
+          <li>Shop</li>
           <li>Contact</li>
         </ul>
       </div>
