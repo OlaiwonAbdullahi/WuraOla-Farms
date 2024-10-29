@@ -2,7 +2,7 @@ import { CiFacebook, CiLinkedin } from "react-icons/ci";
 import logo from "../assets/wuraola.png";
 const Footer = () => {
   return (
-    <div className=" p-2 bg-secondary">
+    <div className=" p-2 bg-secondary flex justify-around">
       <div className=" ">
         <div className=" flex flex-col">
           <div className=" flex items-center text-primary text-xl font-kanit">
@@ -24,8 +24,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="">
+      <div className=" text-primary font-inter pt-4">
         <h2 className=" text-2xl text-primary font-kanit">Quick Links</h2>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Shop</li>
+        </ul>
       </div>
     </div>
   );
