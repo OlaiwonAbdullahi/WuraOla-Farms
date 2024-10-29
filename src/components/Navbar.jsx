@@ -13,8 +13,11 @@ const Navbar = () => {
           <li>Contact</li>
         </ul>
       </div>
-      <div className="">
+      <div className=" p-3 flex">
         <CiShoppingCart className=" h-7 w-7" />
+        <span className=" text-sm bg-secondary text-primary h-5 p-1 items-center flex rounded-full">
+          2
+        </span>
       </div>
     </div>
   );
