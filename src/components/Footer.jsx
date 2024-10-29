@@ -24,7 +24,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=""></div>
+      <div className="">
+        <h2 className=" text-2xl text-primary font-kanit">Quick Links</h2>
+      </div>
     </div>
   );
 };
