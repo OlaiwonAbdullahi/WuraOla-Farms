@@ -60,7 +60,7 @@ const Navbar = () => {
               <LiaTimesSolid className="h-6 w-6 text-primary" />
             </button>
           </div>
-          <Nav />
+          <Nav openMenu={openMenu} setOpenMenu={setOpenMenu} />
         </div>
       )}
     </>
@@ -69,15 +69,28 @@ const Navbar = () => {
 
 export default Navbar;
 
-function Nav() {
+function Nav({ openMenu, setOpenMenu }) {
   return (
     <div className=" flex md:hidden font-kanit justify-center text-center text-2xl relative ">
       <div className="">
         <ul className=" flex flex-col gap-3">
-          <li className=" text-primary">Home</li>
-          <li>About</li>
-          <li>Shop</li>
-          <li>Contact</li>
+          <Link to="/">
+            <li
+              className=" text-primary"
+              onClick={() => setOpenMenu(!openMenu)}
+            >
+              Home
+            </li>
+          </Link>
+          <Link to="/about">
+            <li onClick={() => setOpenMenu(!openMenu)}>About</li>
+          </Link>
+          <Link to="/shop">
+            <li onClick={() => setOpenMenu(!openMenu)}>Shop</li>
+          </Link>
+          <Link to="/contact">
+            <li onClick={() => setOpenMenu(!openMenu)}>Contact</li>
+          </Link>
         </ul>
       </div>
     </div>
