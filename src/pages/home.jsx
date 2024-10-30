@@ -1,4 +1,3 @@
-import Getintouch from "../components/Getintouch";
 import Hero from "../components/Hero";
 import About from "../components/HomeText";
 import Whatwedo from "../components/Whatwedo";
