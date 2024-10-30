@@ -2,7 +2,7 @@ import farmer from "../assets/farmer.jpg";
 import Button from "../components/Button";
 const ContactForm = () => {
   return (
-    <div className=" flex">
+    <div className=" flex flex-col md:flex-row">
       <div className=" basis-1/3">
         <img src={farmer} alt="" className="w-full h-full" />
       </div>
@@ -22,22 +22,22 @@ const ContactForm = () => {
           <input
             type="text"
             placeholder=" Your Name"
-            className=" w-1/3 h-10 rounded-md text-sm p-2 focus:outline-none text-black placeholder:text-black"
+            className=" md:w-1/3 w-full h-10 rounded-md text-sm p-2 focus:outline-none text-black placeholder:text-black"
           />
           <input
             type="email"
             placeholder=" Your Email"
-            className=" w-1/3 h-10 rounded-md text-sm p-2 focus:outline-none text-black placeholder:text-black"
+            className=" md:w-1/3 w-full h-10 rounded-md text-sm p-2 focus:outline-none text-black placeholder:text-black"
           />
 
           <textarea
             name=""
             id=""
             placeholder="Your Message"
-            className="w-1/3 h-28  rounded-md text-sm p-2 focus:outline-none text-black placeholder:text-black"
+            className="md:w-1/3 w-full h-28  rounded-md text-sm p-2 focus:outline-none text-black placeholder:text-black"
           />
         </form>
-        <div className=" w-2/6 mx-auto">
+        <div className=" w-2/6 mx-auto p-2">
           <Button>Send Message</Button>
         </div>
       </div>
