@@ -3,7 +3,11 @@ const ContactForm = () => {
   return (
     <div className=" flex">
       <div className="">
-        <img src="https://placehold.co/600x400/png" alt="" />
+        <img
+          src="https://placehold.co/600x400/png"
+          alt=""
+          className="w-full h-full"
+        />
       </div>
       <div className=" bg-gray-100 w-full flex flex-col gap-2">
         <div className="">
@@ -36,7 +40,7 @@ const ContactForm = () => {
             className="w-1/3 h-28  rounded-md text-sm p-2 focus:outline-none text-black placeholder:text-black"
           />
         </form>
-        <div className="">
+        <div className=" w-2/6 mx-auto">
           <Button>Send Message</Button>
         </div>
       </div>
