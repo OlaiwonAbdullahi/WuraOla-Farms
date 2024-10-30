@@ -9,13 +9,13 @@ const ContactForm = () => {
           className="w-full h-full"
         />
       </div>
-      <div className=" bg-gray-100 w-full flex flex-col gap-2">
+      <div className=" bg-gray-100 w-full flex flex-col gap-2 p-5 justify-center">
         <div className="">
           <h2 className=" text-secondary font-kanit  text-lg text-center  px-2 ">
             Get In Touch
           </h2>
           <span className=" text-center flex mx-auto justify-center text-3xl font-inter text-secondary font-semibold">
-            Send Us A Message
+            Send Us a Message
           </span>
         </div>
         <form
