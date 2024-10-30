@@ -1,15 +1,12 @@
+import farmer from "../assets/farmer.jpg";
 import Button from "../components/Button";
 const ContactForm = () => {
   return (
     <div className=" flex">
-      <div className="">
-        <img
-          src="https://placehold.co/600x400/png"
-          alt=""
-          className="w-full h-full"
-        />
+      <div className=" basis-1/3">
+        <img src={farmer} alt="" className="w-full h-full" />
       </div>
-      <div className=" bg-gray-100 w-full flex flex-col gap-2 p-5 justify-center">
+      <div className=" basis-2/3 bg-gray-100 w-full flex flex-col gap-2 p-5 justify-center">
         <div className="">
           <h2 className=" text-secondary font-kanit  text-lg text-center  px-2 ">
             Get In Touch
