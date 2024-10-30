@@ -3,7 +3,7 @@ import banana from "../assets/banana.jpeg";
 
 const Mission = () => {
   return (
-    <div className="flex md:w-2/3 w-full mx-auto flex-col gap-4 md:flex-row">
+    <div className="flex md:w-2/3 w-full mx-auto flex-col gap-4 md:flex-row p-4 md:p-0 mb-3">
       <div className="md:basis-1/2 basis-full   flex flex-col items-center rounded-lg">
         <div className="relative md:w-1/2 w-full bg-gray-100 rounded-t-lg">
           <img src={banana} alt="banana" className="w-full rounded-t-lg" />
