@@ -1,3 +1,4 @@
+import ContactForm from "../components/ContactForm";
 import ContactHeader from "../components/ContactHeader";
 
 const Contact = () => {
@@ -5,6 +6,9 @@ const Contact = () => {
     <div>
       <div className="">
         <ContactHeader />
+      </div>
+      <div className="">
+        <ContactForm />
       </div>
     </div>
   );
