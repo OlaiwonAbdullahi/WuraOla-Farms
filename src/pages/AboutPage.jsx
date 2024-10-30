@@ -5,7 +5,7 @@ import Whoweare from "../components/Whoweare";
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className=" flex flex-col gap-3">
       <div className="">
         <AboutHeader />
       </div>

@@ -50,7 +50,7 @@ const TeamPics = () => {
             <img
               src={member.imgSrc}
               alt={member.name}
-              className="w-2/3 mb-4 rounded-md"
+              className="w-2/3 mb-4 rounded-3xl"
             />
             <h2 className="text-2xl font-semibold text-left font-kanit">
               {member.name}
