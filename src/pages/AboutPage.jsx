@@ -1,4 +1,5 @@
 import AboutHeader from "../components/AboutHeader";
+import Mision from "../components/Mision";
 import Whoweare from "../components/Whoweare";
 
 const AboutPage = () => {
@@ -9,6 +10,9 @@ const AboutPage = () => {
       </div>
       <div className="">
         <Whoweare />
+      </div>
+      <div className="">
+        <Mision />
       </div>
     </div>
   );
